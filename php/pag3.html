@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="pag1.css">
+    <script src="https://kit.fontawesome.com/facfdf56d6.js" crossorigin="anonymous"></script>
+    <title>Conversão de Medidas</title>
+</head>
+<body>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    margin-top: -10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 145, 2);
+    font-weight: 400;
+}
+.login-button button {
+    margin-top: 46px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 100px;
+    background-color: #ff9204;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+.retangulo0{
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+}
+.tituloPr{
+    margin-left: 90px;
+    font-size: 50px; 
+    font-family: fantasy;
+}
+.alTd{
+    width: 800px;
+    margin-left: 100px;
+    word-break: break-all;
+}
+.retangulo1{
+    margin-top: 200px;
+    width: 150px;
+    height: 4px;
+    background-color: orange;
+}
+.inf1{
+    margin-top: 20px;
+}
+.titulo1{
+    font-size: 20px;
+}
+.tx1{
+    margin-top: 20px;
+}
+
+.retangulo2{
+    margin-top: 70px;
+    width: 150px;
+    height: 4px;
+    background-color: orange;
+}
+
+.retangulo3{
+    margin-top: 70px;
+    width: 150px;
+    height: 4px;
+    background-color: orange;
+}
+.retangulo4{
+    margin-top: 70px;
+    width: 150px;
+    height: 4px;
+    background-color: orange;
+}
+
+.retanguloDb{
+    margin-top: 200px;
+    width: 100%;
+    height: 300px;
+    background-color: #ff9204;
+}
+#logoDb{
+    width: 200px;
+    height: 70px;
+    margin: 20px;
+    margin-top: 20px;
+}
+.itensDb{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.itensDb2{
+    margin-left: 210px;
+    margin-top: 50px;
+}
+
+.fa{
+    margin-top: 50px;
+    margin: 10px;
+}
+
+#insta{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+#face{
+    margin-top: 60px;
+}
+#you{
+    margin-top: 60px;
+}
+.txDb1{
+    margin-left: 480.5px;
+    margin-top: -75px;
+    color: white;
+}    
+.txDb2{
+    margin-left: 795px;
+    margin-top: -17px;
+    color: white;
+}
+.txDb3{
+    width: 200px;
+    font-size: 10px;
+    margin-left: 480.5px;
+    margin-top: 30px;
+    color: white;
+    word-break: break-all;
+}
+.txDb4{
+    width: 200px;
+    font-size: 10px;
+    margin-left: 800.5px;
+    margin-top: -49px;
+    color: white;
+    word-break: break-all;
+}
+.txDb5{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 100px;
+    color: white;
+}
+.tituloo{
+    font-size: 50px;
+    text-align: center;
+}
+.txt{
+    font-size: 25px;
+    text-align: center;
+}
+.ft-rast{
+    align-items: center;
+}
+.codigo{
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+        margin-top: 30px;
+    }
+    .mobile-menu-icon button {
+        background-color: orange;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1px;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    .nav-link{
+        font-size: 10px;  
+    }
+    .nav-item{
+        margin: 5px;
+    }
+    .login-button button{
+        margin-top: -100px;
+    }
+    .tituloo{
+    font-size: 20px;
+    text-align: center;
+    }
+    .txt{
+        font-size: 10px;
+        text-align: center;
+    }
+    .ft-rast{
+        width: 350px;
+        align-items: center;
+    }
+    .codigo{
+        width: 200px;
+        height: 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+        
+    .tmBt{
+        font-size: 10px;
+    }
+    .retangulo0{
+        width: 100%;
+        height: 70px;
+        background-color: orange;
+    }
+    .tituloPr{
+        margin-left: 50px;
+        font-size: 20px; 
+        font-family: fantasy;
+    }
+    .alTd{
+        width: 250px;
+        margin-left: 70px;
+        word-break: break-all;
+    }
+    .retangulo1{
+        margin-top: 100px;
+        width: 150px;
+        height: 4px;
+        background-color: orange;
+    }
+    .inf1{
+        margin-top: 20px;
+    }
+    .titulo1{
+        font-size: 15px;
+    }
+    .tx1{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    
+    .retangulo2{
+        margin-top: 70px;
+        width: 150px;
+        height: 4px;
+        background-color: orange;
+    }
+    
+    .retangulo3{
+        margin-top: 70px;
+        width: 150px;
+        height: 4px;
+        background-color: orange;
+    }
+    .retangulo4{
+        margin-top: 70px;
+        width: 150px;
+        height: 4px;
+        background-color: orange;
+    }
+    
+    .retanguloDb{
+        margin-top: 100px;
+        width: 100%;
+        height: 220px;
+        background-color: #ff9204;
+    }
+    #logoDb{
+        width: 200px;
+        height: 70px;
+        margin: 20px;
+        margin-top: 20px;
+    }
+    .itensDb{
+        display: flex;
+        margin-top: 100px;
+        margin-left: 150px;
+    }
+    
+    .itensDb2{
+        margin-left: 210px;
+        margin-top: 50px;
+    }
+    
+    .fa{
+        margin-top: 50px;
+        margin: 10px;
+    }
+    
+    #insta{
+        display: flex;
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+    #face{
+        margin-top: 60px;
+    }
+    #you{
+        margin-top: 60px;
+    }
+    .txDb1{
+        margin-left: 480.5px;
+        margin-top: -75px;
+        color: white;
+    }    
+    .txDb2{
+        margin-left: 795px;
+        margin-top: -17px;
+        color: white;
+    }
+    .txDb3{
+        width: 200px;
+        font-size: 10px;
+        margin-left: 480.5px;
+        margin-top: 30px;
+        color: white;
+        word-break: break-all;
+    }
+    .txDb4{
+        width: 200px;
+        font-size: 10px;
+        margin-left: 800.5px;
+        margin-top: -49px;
+        color: white;
+        word-break: break-all;
+    }
+    .txDb5{
+        text-align: center;
+        font-size: 10px;
+        margin-top: 100px;
+        color: white;
+    }
+    #logoDb{
+        width: 100px;
+        height: 30px;
+        margin-left: -100px;
+        margin-top: 20px;
+    }
+    .itensDb{
+        font-size: 12px;
+        display: flex;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    
+    .itensDb2{
+        font-size: 12px;
+        margin-left: -250px;
+        margin-top: 50px;
+    }
+    
+    .fa{
+        margin-top: 50px;
+        margin: 10px;
+    }
+    
+    #insta{
+        display: flex;
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+    #face{
+        margin-top: 60px;
+    }
+    #you{
+        margin-top: 60px;
+    }
+    .txDb1{
+        font-size: 8px;
+        margin-left: 58px;
+        margin-top: -35px;
+        color: white;
+    }    
+    .txDb2{
+        font-size: 8px;
+        margin-left: 235px;
+        margin-top: -9px;
+        color: rgb(255, 255, 255);
+    }
+    .txDb3{
+        width: 150px;
+        font-size: 8px;
+        margin-left: 15px;
+        margin-top: 30px;
+        color: white;
+        word-break: break-all;
+    }
+    .txDb4{
+        width: 150px;
+        font-size: 8px;
+        margin-left: 190px;
+        margin-top: -40px;
+        color: white;
+        word-break: break-all;
+    }
+    .txDb5{
+        text-align: center;
+        font-size: 8px;
+        margin-top: 60px;
+        color: white;
+       
+    }
+}
+
+    </style>
+
+    <div class="navbar"></div>
+    <header>
+        <div class="linha1"></div>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="pag1.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="pag2.html" class="nav-link">EMPRESA</a></li>
+                    <li class="nav-item"><a href="pag3.html" class="nav-link">RASTREIO</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="logar.php">LOGIN</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="pag1.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="pag2.html" class="nav-link">EMPRESA</a></li>
+                <li class="nav-item"><a href="pag3.html" class="nav-link">RASTREIO</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="logar.php"><p class="tmBt">LOGIN</p></a></button>
+            </div>
+        </div>
+    </header>
+<P class="tituloo">Descubra onde está o seu pacote</P>
+<p class="txt">Rastreie seu pedido informando o código de rastreio abaixo:</p>
+    <img src="rastreio1FT.png" class="ft-rast">
+   <center> <input type="text" placeholder="Ex: AB BG TH UJ VS" class="codigo" required/></center>
+    <div class="retanguloDb">
+        <div class="itensDb">
+            <img src="logo.png" id="logoDb">
+            <div class="itnsDb1"></div>
+            <i class="fa fa-instagram" aria-hidden="true" id="insta"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true" id="face"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true" id="you"></i>
+            
+            <div class="itensDb2">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        
+            </div>
+        </div>
+        <p class="txDb1">REDES SOCIAIS</p><p class="txDb2">CONTATO</p>
+
+        <p class="txDb3">Razão Social: LOGEXPRESS Transportadora LTDACNPJ: 77.888.999/0001-10 <br><br> Endereço Rua 13, 628 – Maracanaú/CE</p><p class="txDb4">Email 
+            comercial@logexpress.com.br <br> <br>         
+            Segunda a Sexta: 09:00h às 18:00hSábados: 09:00h às 12:00h</p>
+            <p class="txDb5">2023 - Todos os direitos reservados – Produzido por estudantes</p>
+    </div>
+    <script>
+        function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "menu_white_36dp.svg";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "close_white_36dp.svg";
+    }
+}
+    </script>
+</body>
+</html>
